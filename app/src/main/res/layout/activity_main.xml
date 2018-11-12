@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_black"
+            android:gravity="center"
+            android:text="My Lists"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            app:autoSizeMaxTextSize="30dp"
+            app:autoSizeMinTextSize="20dp"
+            app:autoSizeTextType="uniform" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:adjustViewBounds="false"
+            android:background="@drawable/add_header_button"
+            android:onClick="createGroupDialog"
+            android:src="@drawable/add"
+            android:tint="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_list_groups"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
