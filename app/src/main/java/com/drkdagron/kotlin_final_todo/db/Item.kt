@@ -10,4 +10,5 @@ data class Item (
         var tag: String,
         var gid: Int,
         var notes: String,
-        var done: Boolean = false)
+        var done: Boolean = false,
+        var visible: Boolean = true)

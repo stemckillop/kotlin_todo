@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity(), OnItemCreated, OnListReceived {
         setContentView(R.layout.activity_main)
 
         viewManager = LinearLayoutManager(this)
-        viewAdapter = GroupListAdapter( arrayListOf() )
+        viewAdapter = GroupListAdapter( this, arrayListOf() )
         recyclerView = findViewById<RecyclerView>(R.id.main_list_groups).apply {
             layoutManager = viewManager
             adapter = viewAdapter
